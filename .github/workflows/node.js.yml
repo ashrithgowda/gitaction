@@ -16,5 +16,6 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: build and install
-    - run: npm install
-    - run: nodemon server.js
+    - run: |
+          npm install
+          nodemon server.js
